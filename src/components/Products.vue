@@ -1,6 +1,6 @@
  
  <template>
- <div id="card" class="card">
+ <div id="card" class="card pt">
 <img :src="products.imageLink" class="card-img-top" style="width: 190px; height: 13rem; border-radius: 6px; margin-top: 5px;" alt="...">
 
  <div class="card-body">

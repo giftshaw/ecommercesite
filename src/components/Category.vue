@@ -3,7 +3,7 @@
 
  <!-- Page Content -->
  <div>
-  <div class="container">
+  <div class="container" fluid>
     <div class="row" >
  
       <div class="col-lg-10 my-1">
@@ -23,7 +23,7 @@
        export default {
          props: ['categories']
        }
-       </script>script>
+       </script>
 
        <style scoped>
           #widthChange{

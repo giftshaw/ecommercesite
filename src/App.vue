@@ -1,19 +1,15 @@
 <template>
   <div id="app">
     <Header />
-        <div class="container-fluid mb-5">
-          <div class="row">
-            <div id="cat-left">
-              <div class="col-2">   
-                <Category v-for="category in categories" :categories="category" :key="category.id"/>
-              </div>
-            </div>
-            <div id="cat-right">
-              <div class="col-10 my-5"> 
-                <Products v-for="item in items" :products="item" :key="item.category_id"/></div>
-              </div>
-            </div>
-        </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-3"><Category v-for="category in categories" :categories="category" :key="category.id"/></div>
+    <div class="col-9"><carousel  :slide="slider" :key="slider"/></div>
+  </div>
+</div>
+    <Products v-for="item in items" :products="item" :key="item.category_id"/>
+    
   </div>
 </template>
 
@@ -21,12 +17,24 @@
 import Header from './components/Header.vue'
 import Category from './components/Category.vue'
 import Products from '@/components/Products.vue'
+import Carousel from '@/components/Carousel.vue'
 
 export default {
   
   name: 'App',
   data(){
     return {
+      slider: [
+        {
+          slider_image: require("./assets/stirfrymix.jpg")
+        },
+        {
+          slider_image: require("./assets/strawberries.jpg")
+        },
+        {
+          slider_image: require("./assets/stirfrymix.jpg")
+        }
+      ],
       items: [
     {
       category_id: 1,
@@ -41,7 +49,7 @@ export default {
       price: "\u20A6 800",
       imageLink: require("@/assets/veggies.jpg"),
       description: "Diced on pre-order-carrot, green beans, peas, green pepper(kidney beans and sweetcorn optional)"
-    },
+    }, 
      {
       category_id: 3,
       product: "Tomatoe Puree",
@@ -134,7 +142,9 @@ export default {
   components: {
    Header,
    Category,
-   Products
+   Products,
+   Carousel
+  
 
     }
   }
@@ -143,13 +153,13 @@ export default {
 </script>
 
 <style>
-.banner{
+/* .banner{
   width: 1500px;
   height: 400px;
   float:right;
   padding-left: 240px;
   
-}
+} */
 #cat-left{
   float:left;
   margin-top: 160px;
