@@ -9,8 +9,10 @@
   </div>
 </div>
     <Products v-for="item in items" :products="item" :key="item.category_id"/>
-    
+      <Footer/>
   </div>
+
+
 </template>
 
 <script>
@@ -18,6 +20,7 @@ import Header from './components/Header.vue'
 import Category from './components/Category.vue'
 import Products from '@/components/Products.vue'
 import Carousel from '@/components/Carousel.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   
@@ -143,7 +146,8 @@ export default {
    Header,
    Category,
    Products,
-   Carousel
+   Carousel,
+   Footer
   
 
     }
