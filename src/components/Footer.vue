@@ -32,6 +32,8 @@
       </div>
       <!-- Grid column -->
 
+     
+
       <hr class="clearfix w-100 d-md-none">
 
       <!-- Grid column -->
@@ -42,13 +44,13 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!"></a>
+            <a href="#!">Sell your Farm Produce</a>
           </li>
           <li>
-            <a href="#!"></a>
+            <a href="#!">Search farm fresh</a>
           </li>
           <li>
-            <a href="#!"></a>
+            <a href="#!">Logistics Partners</a>
           </li>
           <li>
             <a href="#!"></a>
@@ -68,16 +70,16 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!"></a>
+            <a href="">Sell</a>
           </li>
           <li>
-            <a href="#!"></a>
+            <a href="#!">Become a Distributor</a>
           </li>
           <li>
-            <a href="#!"></a>
+            <a href="#!">Wholesale Packages</a>
           </li>
           <li>
-            <a href="#!"></a>
+            <a href="#!">Farmers Connect</a>
           </li>
         </ul>
 
@@ -94,16 +96,16 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!"></a>
+            <a href="#!">Career</a>
           </li>
           <li>
-            <a href="#!"></a>
+            <a href="#!">Privacy Policy</a>
           </li>
           <li>
-            <a href="#!"></a>
+            <a href="#!">Tech Week</a>
           </li>
           <li>
-            <a href="#!"></a>
+            <a href="#!">Stay safe</a>
           </li>
         </ul>
 
@@ -116,6 +118,15 @@
   </div>
   <!-- Footer Links -->
 
+   <div class="row">
+
+  <ul style="list-style-type:none; margin-right:15;">
+    <h4>Join us</h4>
+  <li><i class="fab fa-facebook-f"></i></li>
+  <li><i class="fab fa-twitter"></i></li>
+  <li><i class="fab fa-youtube"></i></li>
+  </ul>
+  </div>
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
     <a href="https://mdbootstrap.com/"> abujafoodstuffmarket</a>
