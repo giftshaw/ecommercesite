@@ -1,32 +1,40 @@
- 
- <template>
- <div id="card" class="card pt">
-<img :src="products.imageLink" class="card-img-top" style="width: 190px; height: 13rem; border-radius: 6px; margin-top: 5px;" alt="...">
+<template>
+    <div class="products">
+        <a @click="selectProduct(product)">
+        <div class="card card-1 " style="width: 18rem;">
+            <img :src="product.imageLink" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">{{product.name}}</h5>
+                    <p class="card-text">&#x20A6;{{product.price}}</p>
+                </div>
+        </div>
+        </a>
+    </div>
+</template>
 
- <div class="card-body">
-   <h5 class="card-title">{{products.product}}</h5>
-   <p class="card-text">{{products.price}}</p>
-   <a href="#" class="btn btn-success">BUY NOW</a>
+<script>
+export default {
+    props: ['product'],
+     methods: {
+         selectProduct(product){
+            this.$store.commit("setSelectedProductImage", product)
+            this.$router.push({path: '/prod'})
+         }
+    },
+   
+}
+</script>
 
- </div>
-  </div>
-  </template>
-
-  <script>
-  export default {
-    props: ['products']
-  }
-  </script>
-
-  <style scoped>
-  .card {
-    display:inline-block;
-    margin-bottom: 15px;
-    box-shadow: grey 10px 10px 10px;
-    margin: 15px;
-    margin-top: 15px;
-    margin-right: 30px;
-    width: 250px;
-  }
-  </style>
-
+<style scoped>
+    .products{
+        display: inline-block;
+        padding: 10px;
+    }
+    .card-1{
+        box-shadow: 0 15px 30px rgba(100, 105, 100, 0.7);
+        cursor: pointer;   
+    }
+    .card-1:hover{
+        background-color: #eee;
+    }
+</style>

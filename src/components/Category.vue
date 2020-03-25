@@ -8,7 +8,9 @@
  
       <div class="col-lg-10 my-1">
         <div class="list-group" id="widthChange" >
-          <a href="#" class="list-group-item">{{categories.Category_name}}</a>
+          <a href="#" class="list-group-item"> 
+            <!-- {{categories.Category_name}} -->
+             </a>
         </div>
 
       </div>
@@ -19,11 +21,11 @@
   </div>
        </template>
 
-       <script>
+       <!-- <script>
        export default {
          props: ['categories']
        }
-       </script>
+       </script> -->
 
        <style scoped>
           #widthChange{

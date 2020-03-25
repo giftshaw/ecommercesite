@@ -96,16 +96,13 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Career</a>
+            <a href="#!">Facebook  <i class="fab fa-facebook-f"></i></a>
           </li>
           <li>
-            <a href="#!">Privacy Policy</a>
+            <a href="#!">Twitter  <i class="fab fa-twitter"></i></a>
           </li>
           <li>
-            <a href="#!">Tech Week</a>
-          </li>
-          <li>
-            <a href="#!">Stay safe</a>
+            <a href="#!">Youtube  <i class="fab fa-youtube"></i></a>
           </li>
         </ul>
 
@@ -118,7 +115,7 @@
   </div>
   <!-- Footer Links -->
 
-   <div class="row">
+   <!-- <div class="row">
 
   <ul style="list-style-type:none; margin-right:15;">
     <h4>Join us</h4>
@@ -126,7 +123,7 @@
   <li><i class="fab fa-twitter"></i></li>
   <li><i class="fab fa-youtube"></i></li>
   </ul>
-  </div>
+  </div> -->
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
     <a href="https://mdbootstrap.com/"> abujafoodstuffmarket</a>
