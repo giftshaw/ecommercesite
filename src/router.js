@@ -4,6 +4,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from "./views/Home";
 import Product from "./views/Prod";
+
 // import Category from "./views/Category";
 
 

@@ -3,7 +3,7 @@
   <div id="app">
     <Header />
     
-        <div class="container-fluid mt-3 main">
+        <div class="mt-0 main">
           <div class="row">
             <div class="col-sm-3 cat-div">
               <ul class="list-group li-div">
@@ -16,7 +16,7 @@
             <div class="col-lg-6 carousel-div">
               <Carousel :caro="imageCarousel"/>
             </div>
-            <div class="col-lg-3 mt-3">
+            <div class="col-lg-3 mt-20">
               <div class="card">
                 <div class="card-header">
                 New Restock alert
@@ -30,13 +30,12 @@
             </div>
           </div>
         </div>
-
-        <div class="container mt-4 product-div">
-          <div class="shop-now">
-            <h2>Shop now</h2>
-          </div>
-                <Products :product="item" v-for="item in displayProducts" :key="item.id"/>
-        </div>
+        <Products :product="item" v-for="item in displayProducts" :key="item.id"/>
+        <hr style="border:10px:">
+          <div class="">
+            <!-- <h2>Shop now</h2> -->
+          </div>  
+        
         <Footer />
 
         
@@ -104,7 +103,7 @@ export default {
   //  Category,
    Products,
    Carousel,
-   Footer
+   Footer,
   //  Slide
   }
 }

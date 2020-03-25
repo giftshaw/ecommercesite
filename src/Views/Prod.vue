@@ -8,16 +8,16 @@
 
             <div class="col-lg-9 co">
             <h3>{{myProducts.name}} <span class="icon"><i class="far fa-heart"></i></span></h3>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i>
-                <i class="fa fa-star text-warning"></i><span>({{ myProducts.usersRating}} ratings)</span>
+                <i class="fa fa-star text-danger"></i>
+                <i class="fa fa-star text-danger"></i>
+                <i class="fa fa-star text-danger"></i>
+                <i class="fa fa-star text-danger"></i>
+                <i class="fa fa-star text-danger"></i><span>({{ myProducts.usersRating}} ratings)</span>
              <hr class="my-4">
-            <h3><b>&#x20A6;{{myProducts.price}}</b></h3>
+            <h3><b>{{myProducts.price}}</b></h3>
             <hr class="my-4">
            
-            <button type="button" class="text-white btn btn-warning btn-lg btn-block"><span class="cart"><i class="fa fa-cart-plus"></i> </span>ADD TO CART</button>
+            <button type="button" class="text-white btn btn-success btn-lg btn-block"><span class="cart"><i class="fa fa-cart-plus"></i> </span>ADD TO CART</button>
             </div>
         </div>
     </div>
@@ -27,7 +27,8 @@
         <hr class="my-4">
         <p>{{myProducts.Desc}}</p>  
     </div>
-
+    <Header />
+    <Footer />
     </div>
     
 
@@ -36,19 +37,26 @@
 </template>
 
 <script>
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 export default {
     computed: {
         myProducts(){
             return this.$store.state.productImageSelections;
         }
-    }
+
+    },
+     components: {
+   Header,
+   Footer
+  }
 }
 </script>
 
 <style scoped>
 .fluid{
-    border: 1px solid #fff;
-    background-color: #eee;
+    border: 1px solid yellow;
+    background-color: lightgrey;
 }
 .flu{
     
@@ -60,10 +68,10 @@ export default {
 }
 .icon{
     float: right;
-    color: orange;
+    color: olive;
 }
 .cart{
-    color: #fff;
+    color:red;
     float: left;
 }
 </style>
