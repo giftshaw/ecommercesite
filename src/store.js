@@ -25,6 +25,7 @@ const store = new Vuex.Store({
               category_id: 1,
               product: "oloyin",
               price: "\u20A6 600",
+              dPrice: "\u20A6 500",
               imageLink: require("@/assets/oloyin.jpg"),
               Desc: "Neatly picked and farm fresh", 
               images: [ 
@@ -41,6 +42,7 @@ const store = new Vuex.Store({
               category_id: 2,
               product: "mixedveggies",
               price: "\u20A6 800",
+              dPrice: "\u20A6 700",
               imageLink: require("@/assets/veggies.jpg"),
               Desc: "Diced on pre-order-carrot, green beans, peas, green pepper(kidney beans and sweetcorn optional)",
               images: [
@@ -54,6 +56,7 @@ const store = new Vuex.Store({
               category_id: 3,
               product: "Tomatoe Puree",
               price: "\u20A6 1500",
+              dPrice: "\u20A6 1400",
               imageLink: require("@/assets/tomato.jpg"),
               Desc: "Freshly blended and steamed tomatoes",
               images: [
@@ -67,6 +70,7 @@ const store = new Vuex.Store({
               category_id: 4,
               product: "Peeled Beans",
               price: "\u20A6 600",
+              dPrice: "\u20A6 500",
               imageLink: require("@/assets/peeledbeans.jpg"),
               Desc: "freshly peeled on pre-order",
               images: [
@@ -80,6 +84,7 @@ const store = new Vuex.Store({
               category_id: 5,
               product: "Strawberries",
               price: "\u20A6 600",
+              dPrice: "\u20A6 500",
               imageLink: require("@/assets/strawberries.jpg"),
               Desc: "seasonal fruits, available from February till April",
               images: [
@@ -93,6 +98,7 @@ const store = new Vuex.Store({
               category_id: 6,
               product: "Stir Fry Mix",
               price: "\u20A6 600",
+              dPrice: "\u20A6 500",
               imageLink: require("@/assets/stirfrymix.jpg"),
               Desc: "Green, yellow and red bell pepper with carrot",
               images: [
@@ -106,6 +112,7 @@ const store = new Vuex.Store({
               category_id: 7,
               product: "Irish",
               price: "\u20A6 1200",
+              dPrice: "\u20A6 1100",
               imageLink: require("@/assets/irish.jpg"),
               Desc: "freshly harvested Yellow Irish potatoes",
               images: [
@@ -119,6 +126,7 @@ const store = new Vuex.Store({
               category_id: 8,
               product: "Elubo",
               price: "\u20A6 600",
+              dPrice: "\u20A6 500",
               imageLink: require("@/assets/amala.jpg"),
               Desc: "Neatly sieved pure yam flour",
               images: [
@@ -132,6 +140,7 @@ const store = new Vuex.Store({
               category_id: 9,
               product: "Yellow Garri",
               price: "\u20A6 600",
+              dPrice: "\u20A6 500",
               imageLink: require("@/assets/garri.jpg"),
               Desc: "Edo yellow garri",
               images: [
@@ -146,6 +155,7 @@ const store = new Vuex.Store({
               category_id: 10,
               product: "Beans Flour",
               price: "\u20A6 1000",
+              dPrice: "\u20A6 900",
               imageLink: require("@/assets/beansflour.jpg"),
               Desc: "zero odour blended dry beans",
               images: [
