@@ -3,10 +3,11 @@
         <a @click="selectProduct(product)">
         <div class="card card-1 " style="width: 18rem;">
             <img :src="product.imageLink" height="200">
+             <button @click="selectProduct(product)" class="btn btn-success">Buy Now</button>
                 <div class="card-body">
                     <h5 class="card-title">{{product.name}}</h5>
                     <p class="card-text">{{product.price}}</p>
-                    
+                    <!-- <p class="card-text">{{product.imageLink}}</p> -->
                 </div>
         </div>
         </a>
@@ -25,7 +26,6 @@ export default {
    
 }
 </script>
-
 <style scoped>
     .prod{
         display: inline-block;
