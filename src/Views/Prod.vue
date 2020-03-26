@@ -1,6 +1,7 @@
-<template>
-
+<template>    
+<div><header/>
     <div class="styl">
+         <Header />
     <div class="container-fluid fluid">
         <div class="container mt-5 flu">
         <div class="row my-10">
@@ -55,17 +56,12 @@
               </div>
           </div>            
         </div>
-    
     </div>
-   
-    
-   
-    
      </div>
-     <!-- <Header />
-    <Footer /> -->
     </div>
-   
+    <Footer />
+    </div> 
+  
    
     
 
@@ -74,8 +70,8 @@
 </template>
 
 <script>
-// import Header from "../components/Header"
-// import Footer from "../components/Footer"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 export default {
     computed: {
         myProducts(){
@@ -84,8 +80,8 @@ export default {
 
     },
      components: {
-//    Header,
-//    Footer
+   Header,
+   Footer
   }
 }
 </script>

@@ -2,7 +2,7 @@
 <div id = "app">
    <header />
    <router-view></router-view>
-   <footer/>
+   <footer2/>
 </div>
 </template>
 <script>
